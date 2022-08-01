@@ -172,12 +172,13 @@ public class ChannelTalkFlutterPlugin implements FlutterPlugin, MethodCallHandle
     }
 
     ChannelButtonOption buttonOption = new ChannelButtonOption(
-            ChannelButtonPosition.LEFT,
+            ChannelButtonPosition.RIGHT,
             16,
-            23
+            16
     );
 
     BootConfig bootConfig = BootConfig.create(pluginKey)
+            .setChannelButtonOption(buttonOption)
             .setProfile(profile)
             .setMemberHash(memberHash);
     if (call.argument("memberId") != null) {

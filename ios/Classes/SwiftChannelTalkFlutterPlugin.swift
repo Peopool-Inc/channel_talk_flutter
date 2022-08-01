@@ -81,9 +81,9 @@ public class SwiftChannelTalkFlutterPlugin: NSObject, FlutterPlugin {
     }
     
     let buttonOption = ChannelButtonOption.init(
-      position: .left,
+      position: .right,
       xMargin: 16,
-      yMargin: 23
+      yMargin: 16
     )
 
     let memberId = argMaps["memberId"] as? String
